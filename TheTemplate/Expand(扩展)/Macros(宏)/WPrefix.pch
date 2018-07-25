@@ -1,0 +1,35 @@
+//
+//  WPrefix.pch
+//  TheTemplate
+//
+//  Created by yunjobs on 2018/6/26.
+//  Copyright © 2018年 walker. All rights reserved.
+//
+
+#ifndef WPrefix_pch
+#define WPrefix_pch
+
+#import <AFNetworking/AFNetworking.h>
+#import "MBProgressHUD.h"
+#import "YYCache.h"
+#import "UIImageView+WebCache.h"
+
+//宏
+#import "WURLMacro.h"
+#import "WMarco.h"
+#import "WColorHeader.h"
+
+//类别
+#import "UIImage+ColorImage.h"
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+WExtension.h"
+#import "WToast.h"
+#import "BaseViewController.h"
+#import "WSaveManage.h"
+
+
+#import "WNetworkHelper.h"//网络请求
+#import "YYInfiniteLoopView.h" //轮播图
+#import "BusinessDetailController.h"  //webview
+
+#endif /* WPrefix_pch */
