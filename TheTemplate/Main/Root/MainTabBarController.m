@@ -22,13 +22,14 @@
     [self buildMainTabbarController];
 }
 
+#pragma mark ======= 实现方法 =======
 - (void)buildMainTabbarController {
     [self setupChildViewController:@"首页" viewController:[HomeViewController new] image:@"home" selectedImage:@"home"];
     
     [self setupChildViewController:@"我的" viewController:[MineViewController new] image:@"mine" selectedImage:@"mine"];
 }
 
-
+#pragma mark ======= 方法 =======
 - (void)setupChildViewController:(NSString *)title viewController:(UIViewController *)controller image:(NSString *)image selectedImage:(NSString *)selectedImage {
     UITabBarItem *item = [[UITabBarItem alloc]init];
     item.image = [UIImage imageNamed:image];
