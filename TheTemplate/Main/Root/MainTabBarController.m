@@ -22,7 +22,7 @@
     [self buildMainTabbarController];
 }
 
-#pragma mark ======= 实现方法 =======
+
 - (void)buildMainTabbarController {
     [self setupChildViewController:@"首页" viewController:[HomeViewController new] image:@"home" selectedImage:@"home"];
     
