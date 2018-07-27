@@ -7,6 +7,7 @@
 //
 
 #import "TestViewController.h"
+#import "TwoViewController.h"
 
 @interface TestViewController ()<YYInfiniteLoopViewDelegate>
 
@@ -57,9 +58,11 @@
 }
 
 - (void)rightBtn : (UIButton *)sender {
-    BusinessDetailController *businessVC = [[BusinessDetailController alloc] init];
-    businessVC.urlStr = @"http://www.zugeliang01.com/";
-    [self.navigationController pushViewController:businessVC animated:YES];
+//    BusinessDetailController *businessVC = [[BusinessDetailController alloc] init];
+//    businessVC.urlStr = @"http://www.zugeliang01.com/";
+//    [self.navigationController pushViewController:businessVC animated:YES];
+    TwoViewController *TwoViewC = [[TwoViewController alloc] init];
+    [self.navigationController pushViewController:TwoViewC animated:YES];
 }
 
 

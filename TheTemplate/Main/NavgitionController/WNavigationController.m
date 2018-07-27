@@ -26,7 +26,7 @@
     
     [navbar setBackgroundImage:[UIImage imageWithColor:THEMECOLOR] forBarMetrics:UIBarMetricsDefault];
     
-    
+    [[UITabBar appearance] setTintColor:THEMECOLOR];
     NSMutableDictionary *mDict = [NSMutableDictionary dictionary];
     mDict[NSForegroundColorAttributeName] = [UIColor whiteColor];
     navbar.titleTextAttributes = mDict;

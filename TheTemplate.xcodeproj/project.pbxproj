@@ -41,6 +41,7 @@
 		4CFE604D20EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE604620EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.m */; };
 		4CFE605020EA1D7C00EA13E0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE604F20EA1D7C00EA13E0 /* TestViewController.m */; };
 		4CFE605520EA2C5B00EA13E0 /* BusinessDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE605420EA2C5B00EA13E0 /* BusinessDetailController.m */; };
+		98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F21A2109DDB400E69FBB /* TwoViewController.m */; };
 		D3D87CE461056EDD2D7B06FF /* Pods_TheTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A93077B8170344BE029C60 /* Pods_TheTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +137,8 @@
 		4CFE605320EA2C5B00EA13E0 /* BusinessDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessDetailController.h; sourceTree = "<group>"; };
 		4CFE605420EA2C5B00EA13E0 /* BusinessDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailController.m; sourceTree = "<group>"; };
 		72CBB1501CBC6885739F59E4 /* Pods-TheTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheTemplate/Pods-TheTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		98B3F2192109DDB400E69FBB /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		98B3F21A2109DDB400E69FBB /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		D71FDF89EB814F1F2F16CE5C /* Pods-TheTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheTemplate/Pods-TheTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		F4A93077B8170344BE029C60 /* Pods_TheTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -367,6 +370,8 @@
 				4CAE3A0E20E225BD003465B5 /* HomeViewController.m */,
 				4CFE604E20EA1D7C00EA13E0 /* TestViewController.h */,
 				4CFE604F20EA1D7C00EA13E0 /* TestViewController.m */,
+				98B3F2192109DDB400E69FBB /* TwoViewController.h */,
+				98B3F21A2109DDB400E69FBB /* TwoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -717,6 +722,7 @@
 				4CFE605520EA2C5B00EA13E0 /* BusinessDetailController.m in Sources */,
 				4CAE3A3E20E241FD003465B5 /* WNetworkCache.m in Sources */,
 				4CAE3A0C20E22271003465B5 /* UIImage+ColorImage.m in Sources */,
+				98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */,
 				4CFE605020EA1D7C00EA13E0 /* TestViewController.m in Sources */,
 				4CAE39BD20E213CC003465B5 /* ViewController.m in Sources */,
 				4CAE3A1D20E22E06003465B5 /* WGuideCell.m in Sources */,
