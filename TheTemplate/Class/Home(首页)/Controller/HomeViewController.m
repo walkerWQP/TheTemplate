@@ -25,8 +25,8 @@
 
 - (void)makeHomeViewControllerUI {
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [button setTitle:@"点击" forState:UIControlStateNormal];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 60)];
+    [button setTitle:@"点击事件" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(rightBtn:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
