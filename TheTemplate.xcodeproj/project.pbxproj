@@ -498,15 +498,15 @@
 		4CFE604020EA1C3F00EA13E0 /* YYInfiniteLoopView */ = {
 			isa = PBXGroup;
 			children = (
-				4CFE604120EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.h */,
-				4CFE604220EA1C3F00EA13E0 /* YYWeakTimer.m */,
-				4CFE604320EA1C3F00EA13E0 /* YYInfiniteLoopViewLayout.h */,
-				4CFE604420EA1C3F00EA13E0 /* YYInfiniteLoopView.m */,
-				4CFE604520EA1C3F00EA13E0 /* YYInfiniteLoopViewLayout.m */,
-				4CFE604620EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.m */,
 				4CFE604720EA1C3F00EA13E0 /* YYWeakTimer.h */,
-				4CFE604820EA1C3F00EA13E0 /* YYConfigured.h */,
+				4CFE604220EA1C3F00EA13E0 /* YYWeakTimer.m */,
+				4CFE604120EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.h */,
+				4CFE604620EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.m */,
 				4CFE604920EA1C3F00EA13E0 /* YYInfiniteLoopView.h */,
+				4CFE604420EA1C3F00EA13E0 /* YYInfiniteLoopView.m */,
+				4CFE604320EA1C3F00EA13E0 /* YYInfiniteLoopViewLayout.h */,
+				4CFE604520EA1C3F00EA13E0 /* YYInfiniteLoopViewLayout.m */,
+				4CFE604820EA1C3F00EA13E0 /* YYConfigured.h */,
 			);
 			path = YYInfiniteLoopView;
 			sourceTree = "<group>";

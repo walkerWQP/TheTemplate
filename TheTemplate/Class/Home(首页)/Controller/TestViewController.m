@@ -14,13 +14,18 @@
 
 @property (nonatomic, strong) DateTimePickerView  *datePickerView;
 @property (nonatomic, strong) UIButton            *timeBtn;
-
+@property (nonatomic, strong) NSMutableArray      *imgArray;
 
 @end
 
 @implementation TestViewController
 
-
+- (NSMutableArray *)imgArray {
+    if (!_imgArray) {
+        _imgArray = [NSMutableArray array];
+    }
+    return _imgArray;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,14 +40,14 @@
 
 - (void)makeTestViewControllerUI {
     
-     NSArray *imgArr = @[@"http://www.zuimei666.top/data/upload/mobile/special/s0/s0_05550858506170603.jpg",@"http://www.zuimei666.top/data/upload/mobile/special/s0/s0_05550858646743538.jpg",@"http://www.zuimei666.top/data/upload/mobile/special/s0/s0_05550858706504268.jpg",@"http://www.zuimei666.top/data/upload/mobile/special/s0/s0_05550858771581030.jpg"];
+    self.imgArray = [NSMutableArray arrayWithObjects:@"帮助中心背景图",@"请假列表背景图",@"请假详情背景图", nil];
+    
     
     self.bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, APP_WIDTH, APP_HEIGHT * 0.3)];
-    self.bgView.backgroundColor = [UIColor redColor];
     [self.view addSubview:self.bgView];
     
     YYInfiniteLoopView *loopView = [YYInfiniteLoopView
-                                    infiniteLoopViewWithImageUrls:imgArr
+                                    infiniteLoopViewWithImageUrls:self.imgArray
                                     titles:nil
                                     didSelectedImage:^(NSInteger index) {
                                         NSLog(@"%zd",index);
