@@ -30,7 +30,14 @@
     [button addTarget:self action:@selector(rightBtn:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
+    
+    
+    
 }
+
+
+
+
 
 - (void)rightBtn:(UIButton *)sender {
     

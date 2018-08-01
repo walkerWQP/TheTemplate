@@ -10,7 +10,10 @@
 #import "TwoViewController.h"
 #import "BusinessDetailController.h"
 
-@interface TestViewController ()<YYInfiniteLoopViewDelegate>
+@interface TestViewController ()<YYInfiniteLoopViewDelegate,DateTimePickerViewDelegate>
+
+@property (nonatomic, strong) DateTimePickerView  *datePickerView;
+@property (nonatomic, strong) UIButton            *timeBtn;
 
 
 @end
@@ -55,6 +58,36 @@
     loopView.frame = CGRectMake(0, 0, self.bgView.frame.size.width, self.bgView.frame.size.height);
     [self.bgView addSubview:loopView];
     
+    self.timeBtn = [[UIButton alloc] initWithFrame:CGRectMake(40, APP_HEIGHT * 0.3 + 40, 200, 30)];
+    [self.timeBtn setTitle:@"点击" forState:UIControlStateNormal];
+    [self.timeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    self.timeBtn.layer.masksToBounds  = YES;
+    self.timeBtn.layer.cornerRadius   = 5;
+    self.timeBtn.layer.borderColor    = fengeLineColor.CGColor;
+    self.timeBtn.layer.borderWidth    = 1;
+    [self.timeBtn addTarget:self action:@selector(timeBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view  addSubview:self.timeBtn];
+    
+    
+}
+
+- (void)timeBtn : (UIButton *)sender {
+    DateTimePickerView *pickerView = [[DateTimePickerView alloc] init];
+    
+    self.datePickerView = pickerView;
+    
+    pickerView.delegate = self;
+    
+    pickerView.pickerViewMode = DatePickerViewDateMode;
+    
+    [self.view addSubview:pickerView];
+    
+    [pickerView showDateTimePickerView];
+}
+
+- (void)didClickFinishDateTimePickerView:(NSString *)date{
+    
+    [self.timeBtn setTitle:date forState:UIControlStateNormal];
     
 }
 
