@@ -8,6 +8,7 @@
 
 #import "TestViewController.h"
 #import "TwoViewController.h"
+#import "BusinessDetailController.h"
 
 @interface TestViewController ()<YYInfiniteLoopViewDelegate>
 
@@ -61,7 +62,9 @@
 //    BusinessDetailController *businessVC = [[BusinessDetailController alloc] init];
 //    businessVC.urlStr = @"http://www.zugeliang01.com/";
 //    [self.navigationController pushViewController:businessVC animated:YES];
-    TwoViewController *TwoViewC = [[TwoViewController alloc] init];
+    BusinessDetailController *TwoViewC = [[BusinessDetailController alloc] init];
+    TwoViewC.urlStr = @"http://d.ksznxt.com/xc.html";
+    TwoViewC.webTitle = @"学生活动";
     [self.navigationController pushViewController:TwoViewC animated:YES];
 }
 
