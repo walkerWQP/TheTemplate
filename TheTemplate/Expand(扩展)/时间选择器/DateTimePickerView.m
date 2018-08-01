@@ -176,11 +176,11 @@
         
         
         
-        NSCalendar *calendar0 = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        NSCalendar *calendar0 = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
         
         NSDateComponents *comps = [[NSDateComponents alloc] init];
         
-        NSInteger unitFlags =  NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit;
+        NSInteger unitFlags =  NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute;
         
         comps = [calendar0 components:unitFlags fromDate:[NSDate date]];
         
@@ -231,7 +231,7 @@
 //确定每一列返回的东西
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-
+    
     if (self.pickerViewMode == DatePickerViewDateTimeMode) {
         switch (component) {
             case 0:
@@ -309,7 +309,7 @@
                 return 60;
             }
                 break;
-    
+                
             default:
                 break;
         }
@@ -328,11 +328,11 @@
     
     //获取当前时间
     
-    NSCalendar *calendar0 = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar0 = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSDateComponents *comps = [[NSDateComponents alloc] init];
     
-    NSInteger unitFlags =  NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit;
+    NSInteger unitFlags =  NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute;
     
     comps = [calendar0 components:unitFlags fromDate:currentDate];
     
@@ -380,7 +380,7 @@
         [self pickerView:self.pickerView didSelectRow:hour inComponent:3];
         
         [self pickerView:self.pickerView didSelectRow:minute inComponent:4];
-
+        
         
     } else if (self.pickerViewMode == DatePickerViewDateMode) {
         
@@ -411,7 +411,7 @@
         [self pickerView:self.pickerView didSelectRow:minute inComponent:1];
         
     }
-
+    
     [self.pickerView reloadAllComponents];
     
 }
@@ -473,7 +473,7 @@
                 label.text=[NSString stringWithFormat:@"%ld秒",(long)row];
             }
                 break;
-
+                
             default:
                 
                 break;
@@ -784,8 +784,8 @@
         
         self.alpha = 1;
         
-        _contentV.frame = CGRectMake(0, APP_HEIGHT - APP_HEIGHT * 0.38, APP_WIDTH, APP_HEIGHT * 0.38);
-    
+        self.contentV.frame = CGRectMake(0, APP_HEIGHT - APP_HEIGHT * 0.38, APP_WIDTH, APP_HEIGHT * 0.38);
+        
     } completion:^(BOOL finished) {
         
     }];
@@ -798,14 +798,14 @@
         
         self.alpha = 0;
         
-        _contentV.frame = CGRectMake(0, APP_HEIGHT, APP_WIDTH, 220);
+        self.contentV.frame = CGRectMake(0, APP_HEIGHT, APP_WIDTH, 220);
         
     } completion:^(BOOL finished) {
         
         self.frame = CGRectMake(0, APP_HEIGHT, APP_WIDTH, APP_HEIGHT);
         
     }];
-
+    
 }
 
 #pragma mark - private
@@ -938,3 +938,4 @@
 
 
 @end
+
