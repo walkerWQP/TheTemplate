@@ -10,7 +10,10 @@
 #import "TwoViewController.h"
 #import "BusinessDetailController.h"
 
-@interface TestViewController ()<YYInfiniteLoopViewDelegate,DateTimePickerViewDelegate>
+@interface TestViewController ()<YYInfiniteLoopViewDelegate,DateTimePickerViewDelegate,HZQDatePickerViewDelegate>
+{
+    HZQDatePickerView *_pikerView;
+}
 
 @property (nonatomic, strong) DateTimePickerView  *datePickerView;
 @property (nonatomic, strong) UIButton            *timeBtn;
@@ -77,17 +80,49 @@
 }
 
 - (void)timeBtn : (UIButton *)sender {
-    DateTimePickerView *pickerView = [[DateTimePickerView alloc] init];
+//    DateTimePickerView *pickerView = [[DateTimePickerView alloc] init];
+//
+//    self.datePickerView = pickerView;
+//
+//    pickerView.delegate = self;
+//
+//    pickerView.pickerViewMode = DatePickerViewDateMode;
+//
+//    [self.view addSubview:pickerView];
+//
+//    [pickerView showDateTimePickerView];
+    [self setupDateView:DateTypeOfStart]; //开始时间。  [self setupDateView:DateTypeOfEnd];  //结束时间
+}
+
+- (void)getSelectDate:(NSString *)date type:(DateType)type {
+    NSLog(@"%d - %@", type, date);
+    switch (type) {
+        case DateTypeOfStart:
+            [self.timeBtn setTitle:date forState:UIControlStateNormal];
+            break;
+            
+        case DateTypeOfEnd:
+            [self.timeBtn setTitle:date forState:UIControlStateNormal];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)setupDateView:(DateType)type {
     
-    self.datePickerView = pickerView;
+    _pikerView = [HZQDatePickerView instanceDatePickerView];
+    _pikerView.frame = CGRectMake(0, 0, APP_WIDTH, APP_HEIGHT + 20);
+    [_pikerView setBackgroundColor:[UIColor clearColor]];
+    _pikerView.delegate = self;
+    _pikerView.type = type;
+    // 今天开始往后的日期
+    [_pikerView.datePickerView setMinimumDate:[NSDate date]];
+    // 在今天之前的日期
+    //    [_pikerView.datePickerView setMaximumDate:[NSDate date]];
+    [self.view addSubview:_pikerView];
     
-    pickerView.delegate = self;
-    
-    pickerView.pickerViewMode = DatePickerViewDateMode;
-    
-    [self.view addSubview:pickerView];
-    
-    [pickerView showDateTimePickerView];
 }
 
 - (void)didClickFinishDateTimePickerView:(NSString *)date{
