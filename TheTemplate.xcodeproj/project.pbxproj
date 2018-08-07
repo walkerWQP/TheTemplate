@@ -70,6 +70,10 @@
 		98CA16FC211949AC00579F31 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16F1211949AB00579F31 /* MASViewConstraint.m */; };
 		98CA16FD211949AC00579F31 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16F2211949AB00579F31 /* MASViewAttribute.m */; };
 		98CA16FE211949AC00579F31 /* UIView+CLSetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16F3211949AB00579F31 /* UIView+CLSetRect.m */; };
+		98CA170221194BA700579F31 /* UIBarButtonItem+WExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA170021194BA700579F31 /* UIBarButtonItem+WExtension.m */; };
+		98CA170621194BF100579F31 /* UIButton+WCustomIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA170521194BF100579F31 /* UIButton+WCustomIcon.m */; };
+		98CA170921194C1000579F31 /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA170821194C1000579F31 /* UIImage+ColorImage.m */; };
+		98CA170D21194C4800579F31 /* WTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA170B21194C4800579F31 /* WTextView.m */; };
 		98E33E6A2117E25C0098C241 /* HZQDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E33E672117E25B0098C241 /* HZQDatePickerView.xib */; };
 		98E33E6B2117E25C0098C241 /* HZQDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E33E682117E25B0098C241 /* HZQDatePickerView.m */; };
 		98E33E762117E35D0098C241 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E33E742117E35C0098C241 /* UIColor+HexString.m */; };
@@ -233,6 +237,14 @@
 		98CA16F1211949AB00579F31 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
 		98CA16F2211949AB00579F31 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		98CA16F3211949AB00579F31 /* UIView+CLSetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLSetRect.m"; sourceTree = "<group>"; };
+		98CA170021194BA700579F31 /* UIBarButtonItem+WExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WExtension.m"; sourceTree = "<group>"; };
+		98CA170121194BA700579F31 /* UIBarButtonItem+WExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WExtension.h"; sourceTree = "<group>"; };
+		98CA170421194BF100579F31 /* UIButton+WCustomIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WCustomIcon.h"; sourceTree = "<group>"; };
+		98CA170521194BF100579F31 /* UIButton+WCustomIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WCustomIcon.m"; sourceTree = "<group>"; };
+		98CA170721194C1000579F31 /* UIImage+ColorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorImage.h"; sourceTree = "<group>"; };
+		98CA170821194C1000579F31 /* UIImage+ColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
+		98CA170B21194C4800579F31 /* WTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTextView.m; sourceTree = "<group>"; };
+		98CA170C21194C4800579F31 /* WTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTextView.h; sourceTree = "<group>"; };
 		98E33E672117E25B0098C241 /* HZQDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HZQDatePickerView.xib; sourceTree = "<group>"; };
 		98E33E682117E25B0098C241 /* HZQDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQDatePickerView.m; sourceTree = "<group>"; };
 		98E33E692117E25C0098C241 /* HZQDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZQDatePickerView.h; sourceTree = "<group>"; };
@@ -348,6 +360,9 @@
 		4CAE39EB20E21908003465B5 /* Expand(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				98CA170A21194C1F00579F31 /* WTextView */,
+				98CA170321194BAC00579F31 /* btn(在图片左右方法) */,
+				98CA16FF21194B6B00579F31 /* UIBarButtonItem(控件) */,
 				983CD957211158440050508C /* 时间选择器 */,
 				4CFE605220EA2C3C00EA13E0 /* Webview */,
 				4CFE603F20EA1C2900EA13E0 /* 轮播图 */,
@@ -772,6 +787,35 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		98CA16FF21194B6B00579F31 /* UIBarButtonItem(控件) */ = {
+			isa = PBXGroup;
+			children = (
+				98CA170121194BA700579F31 /* UIBarButtonItem+WExtension.h */,
+				98CA170021194BA700579F31 /* UIBarButtonItem+WExtension.m */,
+			);
+			path = "UIBarButtonItem(控件)";
+			sourceTree = "<group>";
+		};
+		98CA170321194BAC00579F31 /* btn(在图片左右方法) */ = {
+			isa = PBXGroup;
+			children = (
+				98CA170421194BF100579F31 /* UIButton+WCustomIcon.h */,
+				98CA170521194BF100579F31 /* UIButton+WCustomIcon.m */,
+				98CA170721194C1000579F31 /* UIImage+ColorImage.h */,
+				98CA170821194C1000579F31 /* UIImage+ColorImage.m */,
+			);
+			path = "btn(在图片左右方法)";
+			sourceTree = "<group>";
+		};
+		98CA170A21194C1F00579F31 /* WTextView */ = {
+			isa = PBXGroup;
+			children = (
+				98CA170C21194C4800579F31 /* WTextView.h */,
+				98CA170B21194C4800579F31 /* WTextView.m */,
+			);
+			path = WTextView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -976,6 +1020,7 @@
 				4CAE3A3E20E241FD003465B5 /* WNetworkCache.m in Sources */,
 				4CAE3A0C20E22271003465B5 /* UIImage+ColorImage.m in Sources */,
 				98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */,
+				98CA170221194BA700579F31 /* UIBarButtonItem+WExtension.m in Sources */,
 				98CA16CF211948D500579F31 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				4CFE605020EA1D7C00EA13E0 /* TestViewController.m in Sources */,
 				98CA16F8211949AC00579F31 /* MASLayoutConstraint.m in Sources */,
@@ -988,9 +1033,12 @@
 				4CAE3A3120E238D2003465B5 /* WToast.m in Sources */,
 				98CA16C5211948D500579F31 /* IQBarButtonItem.m in Sources */,
 				4CAE39FA20E21E77003465B5 /* WNavigationController.m in Sources */,
+				98CA170921194C1000579F31 /* UIImage+ColorImage.m in Sources */,
 				4CFE604B20EA1C3F00EA13E0 /* YYInfiniteLoopView.m in Sources */,
+				98CA170621194BF100579F31 /* UIButton+WCustomIcon.m in Sources */,
 				98CA16C4211948D500579F31 /* IQTitleBarButtonItem.m in Sources */,
 				98CA16CE211948D500579F31 /* IQUIViewController+Additions.m in Sources */,
+				98CA170D21194C4800579F31 /* WTextView.m in Sources */,
 				98CA16F7211949AC00579F31 /* MASConstraintMaker.m in Sources */,
 				4CAE39C820E213CC003465B5 /* main.m in Sources */,
 				4CAE3A0F20E225BD003465B5 /* HomeViewController.m in Sources */,
