@@ -43,6 +43,9 @@
 		4CFE605520EA2C5B00EA13E0 /* BusinessDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE605420EA2C5B00EA13E0 /* BusinessDetailController.m */; };
 		983CD95A211158680050508C /* DateTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 983CD959211158680050508C /* DateTimePickerView.m */; };
 		98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F21A2109DDB400E69FBB /* TwoViewController.m */; };
+		98E33E6A2117E25C0098C241 /* HZQDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E33E672117E25B0098C241 /* HZQDatePickerView.xib */; };
+		98E33E6B2117E25C0098C241 /* HZQDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E33E682117E25B0098C241 /* HZQDatePickerView.m */; };
+		98E33E762117E35D0098C241 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E33E742117E35C0098C241 /* UIColor+HexString.m */; };
 		D3D87CE461056EDD2D7B06FF /* Pods_TheTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A93077B8170344BE029C60 /* Pods_TheTemplate.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +145,11 @@
 		983CD959211158680050508C /* DateTimePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateTimePickerView.m; sourceTree = "<group>"; };
 		98B3F2192109DDB400E69FBB /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		98B3F21A2109DDB400E69FBB /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		98E33E672117E25B0098C241 /* HZQDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HZQDatePickerView.xib; sourceTree = "<group>"; };
+		98E33E682117E25B0098C241 /* HZQDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZQDatePickerView.m; sourceTree = "<group>"; };
+		98E33E692117E25C0098C241 /* HZQDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZQDatePickerView.h; sourceTree = "<group>"; };
+		98E33E742117E35C0098C241 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		98E33E752117E35D0098C241 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
 		D71FDF89EB814F1F2F16CE5C /* Pods-TheTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheTemplate/Pods-TheTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		F4A93077B8170344BE029C60 /* Pods_TheTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -534,6 +542,11 @@
 			children = (
 				983CD958211158680050508C /* DateTimePickerView.h */,
 				983CD959211158680050508C /* DateTimePickerView.m */,
+				98E33E692117E25C0098C241 /* HZQDatePickerView.h */,
+				98E33E682117E25B0098C241 /* HZQDatePickerView.m */,
+				98E33E672117E25B0098C241 /* HZQDatePickerView.xib */,
+				98E33E752117E35D0098C241 /* UIColor+HexString.h */,
+				98E33E742117E35C0098C241 /* UIColor+HexString.m */,
 			);
 			path = "时间选择器";
 			sourceTree = "<group>";
@@ -647,6 +660,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E33E6A2117E25C0098C241 /* HZQDatePickerView.xib in Resources */,
 				4CAE39C520E213CC003465B5 /* LaunchScreen.storyboard in Resources */,
 				4CAE39C220E213CC003465B5 /* Assets.xcassets in Resources */,
 				4CAE39C020E213CC003465B5 /* Main.storyboard in Resources */,
@@ -756,11 +770,13 @@
 				4CFE604C20EA1C3F00EA13E0 /* YYInfiniteLoopViewLayout.m in Sources */,
 				4CAE3A1520E2269C003465B5 /* MainTabBarController.m in Sources */,
 				4CAE3A2B20E233F3003465B5 /* BaseViewController.m in Sources */,
+				98E33E6B2117E25C0098C241 /* HZQDatePickerView.m in Sources */,
 				4CAE3A1A20E22DC0003465B5 /* WGuideViewController.m in Sources */,
 				4CAE3A1220E2261A003465B5 /* MineViewController.m in Sources */,
 				4CAE3A4820E243E3003465B5 /* YYDiskCache.m in Sources */,
 				4CAE3A2E20E236F5003465B5 /* UIBarButtonItem+WExtension.m in Sources */,
 				4CAE3A2020E22EDD003465B5 /* UIView+Frame.m in Sources */,
+				98E33E762117E35D0098C241 /* UIColor+HexString.m in Sources */,
 				4CAE3A4A20E243E3003465B5 /* YYKVStorage.m in Sources */,
 				4CAE3A4920E243E3003465B5 /* YYCache.m in Sources */,
 			);
