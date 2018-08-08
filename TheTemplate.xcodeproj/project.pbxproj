@@ -42,6 +42,9 @@
 		4CFE605020EA1D7C00EA13E0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE604F20EA1D7C00EA13E0 /* TestViewController.m */; };
 		4CFE605520EA2C5B00EA13E0 /* BusinessDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE605420EA2C5B00EA13E0 /* BusinessDetailController.m */; };
 		983CD95A211158680050508C /* DateTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 983CD959211158680050508C /* DateTimePickerView.m */; };
+		989822AB211AECA500D547C0 /* UIView+GoodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822A8211AECA500D547C0 /* UIView+GoodView.m */; };
+		989822AF211AEF5300D547C0 /* WPublicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822AE211AEF5300D547C0 /* WPublicManager.m */; };
+		989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822B1211AF01000D547C0 /* WProgressHUD.m */; };
 		98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F21A2109DDB400E69FBB /* TwoViewController.m */; };
 		98CA16C2211948D500579F31 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A0211948D400579F31 /* IQTextView.m */; };
 		98CA16C3211948D500579F31 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A4211948D400579F31 /* IQToolbar.m */; };
@@ -174,6 +177,12 @@
 		72CBB1501CBC6885739F59E4 /* Pods-TheTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheTemplate/Pods-TheTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		983CD958211158680050508C /* DateTimePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateTimePickerView.h; sourceTree = "<group>"; };
 		983CD959211158680050508C /* DateTimePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateTimePickerView.m; sourceTree = "<group>"; };
+		989822A6211AECA500D547C0 /* UIView+GoodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GoodView.h"; sourceTree = "<group>"; };
+		989822A8211AECA500D547C0 /* UIView+GoodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GoodView.m"; sourceTree = "<group>"; };
+		989822AD211AEF5300D547C0 /* WPublicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPublicManager.h; sourceTree = "<group>"; };
+		989822AE211AEF5300D547C0 /* WPublicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPublicManager.m; sourceTree = "<group>"; };
+		989822B0211AF01000D547C0 /* WProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WProgressHUD.h; sourceTree = "<group>"; };
+		989822B1211AF01000D547C0 /* WProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WProgressHUD.m; sourceTree = "<group>"; };
 		98B3F2192109DDB400E69FBB /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		98B3F21A2109DDB400E69FBB /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		98CA16A0211948D400579F31 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
@@ -360,6 +369,7 @@
 		4CAE39EB20E21908003465B5 /* Expand(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				989822A3211AEC5300D547C0 /* 提示效果 */,
 				98CA170A21194C1F00579F31 /* WTextView */,
 				98CA170321194BAC00579F31 /* btn(在图片左右方法) */,
 				98CA16FF21194B6B00579F31 /* UIBarButtonItem(控件) */,
@@ -656,6 +666,19 @@
 				98E33E742117E35C0098C241 /* UIColor+HexString.m */,
 			);
 			path = "时间选择器";
+			sourceTree = "<group>";
+		};
+		989822A3211AEC5300D547C0 /* 提示效果 */ = {
+			isa = PBXGroup;
+			children = (
+				989822A6211AECA500D547C0 /* UIView+GoodView.h */,
+				989822A8211AECA500D547C0 /* UIView+GoodView.m */,
+				989822AD211AEF5300D547C0 /* WPublicManager.h */,
+				989822AE211AEF5300D547C0 /* WPublicManager.m */,
+				989822B0211AF01000D547C0 /* WProgressHUD.h */,
+				989822B1211AF01000D547C0 /* WProgressHUD.m */,
+			);
+			path = "提示效果";
 			sourceTree = "<group>";
 		};
 		98CA169E211948D400579F31 /* IQKeyBoardManager */ = {
@@ -1028,11 +1051,13 @@
 				98CA16F6211949AC00579F31 /* MASCompositeConstraint.m in Sources */,
 				4CAE39BD20E213CC003465B5 /* ViewController.m in Sources */,
 				4CAE3A1D20E22E06003465B5 /* WGuideCell.m in Sources */,
+				989822AB211AECA500D547C0 /* UIView+GoodView.m in Sources */,
 				4CAE3A2320E232E1003465B5 /* WGuideManage.m in Sources */,
 				4CFE604D20EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.m in Sources */,
 				4CAE3A3120E238D2003465B5 /* WToast.m in Sources */,
 				98CA16C5211948D500579F31 /* IQBarButtonItem.m in Sources */,
 				4CAE39FA20E21E77003465B5 /* WNavigationController.m in Sources */,
+				989822AF211AEF5300D547C0 /* WPublicManager.m in Sources */,
 				98CA170921194C1000579F31 /* UIImage+ColorImage.m in Sources */,
 				4CFE604B20EA1C3F00EA13E0 /* YYInfiniteLoopView.m in Sources */,
 				98CA170621194BF100579F31 /* UIButton+WCustomIcon.m in Sources */,
@@ -1042,6 +1067,7 @@
 				98CA16F7211949AC00579F31 /* MASConstraintMaker.m in Sources */,
 				4CAE39C820E213CC003465B5 /* main.m in Sources */,
 				4CAE3A0F20E225BD003465B5 /* HomeViewController.m in Sources */,
+				989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */,
 				98CA16CB211948D500579F31 /* IQUITextFieldView+Additions.m in Sources */,
 				98CA16C6211948D500579F31 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				4CAE3A4B20E243E3003465B5 /* YYMemoryCache.m in Sources */,

@@ -41,6 +41,7 @@
 #import "Masonry.h"
 #import "UIImage+ColorImage.h" //使用image方法添加颜色
 #import "UIBarButtonItem+WExtension.h"
+#import "WProgressHUD.h" //提示效果
 
 
 #endif /* WPrefix_pch */
