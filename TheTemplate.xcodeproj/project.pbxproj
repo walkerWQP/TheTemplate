@@ -58,6 +58,8 @@
 		989EB5872126BFF9008BF6B9 /* testBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 989EB57E2126BFF9008BF6B9 /* testBg.png */; };
 		989EB5882126BFF9008BF6B9 /* test.htm in Resources */ = {isa = PBXBuildFile; fileRef = 989EB5812126BFF9008BF6B9 /* test.htm */; };
 		989EB58B2126C303008BF6B9 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB58A2126C303008BF6B9 /* PageViewController.m */; };
+		989EB5932126D309008BF6B9 /* LLWCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB58F2126D308008BF6B9 /* LLWCustomButton.m */; };
+		989EB5942126D309008BF6B9 /* LLWPlusPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5912126D308008BF6B9 /* LLWPlusPopView.m */; };
 		98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F21A2109DDB400E69FBB /* TwoViewController.m */; };
 		98CA16C2211948D500579F31 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A0211948D400579F31 /* IQTextView.m */; };
 		98CA16C3211948D500579F31 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A4211948D400579F31 /* IQToolbar.m */; };
@@ -221,6 +223,10 @@
 		989EB5822126BFF9008BF6B9 /* Test1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1VC.h; sourceTree = "<group>"; };
 		989EB5892126C303008BF6B9 /* PageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		989EB58A2126C303008BF6B9 /* PageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		989EB58F2126D308008BF6B9 /* LLWCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWCustomButton.m; sourceTree = "<group>"; };
+		989EB5902126D308008BF6B9 /* LLWPlusPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWPlusPopView.h; sourceTree = "<group>"; };
+		989EB5912126D308008BF6B9 /* LLWPlusPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWPlusPopView.m; sourceTree = "<group>"; };
+		989EB5922126D309008BF6B9 /* LLWCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWCustomButton.h; sourceTree = "<group>"; };
 		98B3F2192109DDB400E69FBB /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		98B3F21A2109DDB400E69FBB /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		98CA16A0211948D400579F31 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
@@ -407,6 +413,7 @@
 		4CAE39EB20E21908003465B5 /* Expand(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				989EB58E2126D2C4008BF6B9 /* 仿微博弹出效果 */,
 				989EB5692126BFB8008BF6B9 /* 分页效果 */,
 				989EB5612126B929008BF6B9 /* 密码弹出view */,
 				989822A3211AEC5300D547C0 /* 提示效果 */,
@@ -784,6 +791,17 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		989EB58E2126D2C4008BF6B9 /* 仿微博弹出效果 */ = {
+			isa = PBXGroup;
+			children = (
+				989EB5922126D309008BF6B9 /* LLWCustomButton.h */,
+				989EB58F2126D308008BF6B9 /* LLWCustomButton.m */,
+				989EB5902126D308008BF6B9 /* LLWPlusPopView.h */,
+				989EB5912126D308008BF6B9 /* LLWPlusPopView.m */,
+			);
+			path = "仿微博弹出效果";
+			sourceTree = "<group>";
+		};
 		98CA169E211948D400579F31 /* IQKeyBoardManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -1128,6 +1146,7 @@
 			files = (
 				989EB56D2126BFD9008BF6B9 /* EWaterFallView.m in Sources */,
 				4CFE605520EA2C5B00EA13E0 /* BusinessDetailController.m in Sources */,
+				989EB5932126D309008BF6B9 /* LLWCustomButton.m in Sources */,
 				98CA16CA211948D500579F31 /* IQUIWindow+Hierarchy.m in Sources */,
 				98CA16F4211949AC00579F31 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				98CA16FC211949AC00579F31 /* MASViewConstraint.m in Sources */,
@@ -1139,6 +1158,7 @@
 				98CA170221194BA700579F31 /* UIBarButtonItem+WExtension.m in Sources */,
 				98CA16CF211948D500579F31 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				4CFE605020EA1D7C00EA13E0 /* TestViewController.m in Sources */,
+				989EB5942126D309008BF6B9 /* LLWPlusPopView.m in Sources */,
 				989EB5862126BFF9008BF6B9 /* Test4ItemView.m in Sources */,
 				98CA16F8211949AC00579F31 /* MASLayoutConstraint.m in Sources */,
 				98CA16C2211948D500579F31 /* IQTextView.m in Sources */,

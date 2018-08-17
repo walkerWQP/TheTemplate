@@ -18,6 +18,8 @@
 @property (nonatomic, strong) UIButton *passwordBtn;
 @property (nonatomic, strong) ZJPayPopupView *payPopupView;
 @property (nonatomic, strong) UIButton  *pageBtn;
+@property (nonatomic, strong) UIButton  *shareBtn;
+
 
 @end
 
@@ -56,9 +58,26 @@
     [self.pageBtn addTarget:self action:@selector(pageBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.pageBtn];
     
+    self.shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, self.passwordBtn.frame.size.height +  _tableView.frame.size.height + self.pageBtn.frame.size.height + 40, APP_WIDTH - 40, 40)];
+    self.shareBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    self.shareBtn.center = self.view.center;
+    [self.view addSubview:self.shareBtn];
+    [self.shareBtn addTarget:self action:@selector(shareBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
     
     
     
+    
+}
+
+- (void)shareBtnSelector:(UIButton *)sender {
+    NSMutableArray *imgs = @[].mutableCopy;
+    for (NSInteger i = 0; i < 7; i ++) {
+        [imgs addObject:[NSString stringWithFormat:@"publish_%zi", i]];
+    }
+    NSArray *titles = @[@"文字", @"图片", @"视频", @"语言", @"投票", @"签到",  @"文字",];
+    [LLWPlusPopView showWithImages:imgs titles:titles selectBlock:^(NSInteger index) {
+        NSLog(@"index:%zi", index);
+    }];
 }
 
 - (void)pageBtnSelector:(UIButton *)sender {
