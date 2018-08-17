@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "TestViewController.h"
+#import "PageViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,ZJPayPopupViewDelegate>
 {
@@ -16,6 +17,7 @@
 
 @property (nonatomic, strong) UIButton *passwordBtn;
 @property (nonatomic, strong) ZJPayPopupView *payPopupView;
+@property (nonatomic, strong) UIButton  *pageBtn;
 
 @end
 
@@ -40,15 +42,28 @@
     _tableView.dataSource=self;
     [self.view addSubview:_tableView];
     
-    self.passwordBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, _tableView.frame.size.height + 20 + APP_NAVH, APP_WIDTH - 40, 40)];
+    self.passwordBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, _tableView.frame.size.height + 20, APP_WIDTH - 40, 40)];
     [self.passwordBtn setTitle:@"点击输入密码" forState:UIControlStateNormal];
     [self.passwordBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.passwordBtn.backgroundColor = [UIColor greenColor];
     [self.passwordBtn addTarget:self action:@selector(passwordBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.passwordBtn];
     
+    self.pageBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, self.passwordBtn.frame.size.height +  _tableView.frame.size.height + 30, APP_WIDTH - 40, 40)];
+    [self.pageBtn setTitle:@"点击进入分页效果" forState:UIControlStateNormal];
+    [self.pageBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.pageBtn.backgroundColor = [UIColor greenColor];
+    [self.pageBtn addTarget:self action:@selector(pageBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.pageBtn];
     
     
+    
+    
+}
+
+- (void)pageBtnSelector:(UIButton *)sender {
+    PageViewController *pageVC = [[PageViewController alloc] init];
+    [self.navigationController pushViewController:pageVC animated:YES];
 }
 
 - (void)passwordBtnSelector:(UIButton *)sender {

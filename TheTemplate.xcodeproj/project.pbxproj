@@ -47,6 +47,17 @@
 		989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822B1211AF01000D547C0 /* WProgressHUD.m */; };
 		989EB5672126B953008BF6B9 /* ZJPayPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5622126B953008BF6B9 /* ZJPayPopupView.m */; };
 		989EB5682126B953008BF6B9 /* ZJPayPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5662126B953008BF6B9 /* ZJPayPasswordView.m */; };
+		989EB56D2126BFD9008BF6B9 /* EWaterFallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB56B2126BFD9008BF6B9 /* EWaterFallView.m */; };
+		989EB5752126BFE8008BF6B9 /* EPageSegmentCT.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB56F2126BFE8008BF6B9 /* EPageSegmentCT.m */; };
+		989EB5762126BFE8008BF6B9 /* ENestScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5702126BFE8008BF6B9 /* ENestScrollPageView.m */; };
+		989EB5772126BFE8008BF6B9 /* EScrollPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5712126BFE8008BF6B9 /* EScrollPageView.m */; };
+		989EB5832126BFF9008BF6B9 /* Test1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB57A2126BFF9008BF6B9 /* Test1VC.m */; };
+		989EB5842126BFF9008BF6B9 /* Test2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB57B2126BFF9008BF6B9 /* Test2VC.m */; };
+		989EB5852126BFF9008BF6B9 /* Test3VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB57C2126BFF9008BF6B9 /* Test3VC.m */; };
+		989EB5862126BFF9008BF6B9 /* Test4ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB57D2126BFF9008BF6B9 /* Test4ItemView.m */; };
+		989EB5872126BFF9008BF6B9 /* testBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 989EB57E2126BFF9008BF6B9 /* testBg.png */; };
+		989EB5882126BFF9008BF6B9 /* test.htm in Resources */ = {isa = PBXBuildFile; fileRef = 989EB5812126BFF9008BF6B9 /* test.htm */; };
+		989EB58B2126C303008BF6B9 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB58A2126C303008BF6B9 /* PageViewController.m */; };
 		98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F21A2109DDB400E69FBB /* TwoViewController.m */; };
 		98CA16C2211948D500579F31 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A0211948D400579F31 /* IQTextView.m */; };
 		98CA16C3211948D500579F31 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A4211948D400579F31 /* IQToolbar.m */; };
@@ -190,6 +201,26 @@
 		989EB5642126B953008BF6B9 /* ZJPayPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPayPasswordView.h; sourceTree = "<group>"; };
 		989EB5652126B953008BF6B9 /* ZJDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDefines.h; sourceTree = "<group>"; };
 		989EB5662126B953008BF6B9 /* ZJPayPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPayPasswordView.m; sourceTree = "<group>"; };
+		989EB56B2126BFD9008BF6B9 /* EWaterFallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWaterFallView.m; sourceTree = "<group>"; };
+		989EB56C2126BFD9008BF6B9 /* EWaterFallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWaterFallView.h; sourceTree = "<group>"; };
+		989EB56F2126BFE8008BF6B9 /* EPageSegmentCT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPageSegmentCT.m; sourceTree = "<group>"; };
+		989EB5702126BFE8008BF6B9 /* ENestScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENestScrollPageView.m; sourceTree = "<group>"; };
+		989EB5712126BFE8008BF6B9 /* EScrollPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EScrollPageView.m; sourceTree = "<group>"; };
+		989EB5722126BFE8008BF6B9 /* EPageSegmentCT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPageSegmentCT.h; sourceTree = "<group>"; };
+		989EB5732126BFE8008BF6B9 /* ENestScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENestScrollPageView.h; sourceTree = "<group>"; };
+		989EB5742126BFE8008BF6B9 /* EScrollPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EScrollPageView.h; sourceTree = "<group>"; };
+		989EB5792126BFF9008BF6B9 /* Test4ItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test4ItemView.h; sourceTree = "<group>"; };
+		989EB57A2126BFF9008BF6B9 /* Test1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1VC.m; sourceTree = "<group>"; };
+		989EB57B2126BFF9008BF6B9 /* Test2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2VC.m; sourceTree = "<group>"; };
+		989EB57C2126BFF9008BF6B9 /* Test3VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test3VC.m; sourceTree = "<group>"; };
+		989EB57D2126BFF9008BF6B9 /* Test4ItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test4ItemView.m; sourceTree = "<group>"; };
+		989EB57E2126BFF9008BF6B9 /* testBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testBg.png; sourceTree = "<group>"; };
+		989EB57F2126BFF9008BF6B9 /* Test3VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test3VC.h; sourceTree = "<group>"; };
+		989EB5802126BFF9008BF6B9 /* Test2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2VC.h; sourceTree = "<group>"; };
+		989EB5812126BFF9008BF6B9 /* test.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.htm; sourceTree = "<group>"; };
+		989EB5822126BFF9008BF6B9 /* Test1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1VC.h; sourceTree = "<group>"; };
+		989EB5892126C303008BF6B9 /* PageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		989EB58A2126C303008BF6B9 /* PageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		98B3F2192109DDB400E69FBB /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		98B3F21A2109DDB400E69FBB /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		98CA16A0211948D400579F31 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
@@ -376,6 +407,7 @@
 		4CAE39EB20E21908003465B5 /* Expand(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				989EB5692126BFB8008BF6B9 /* 分页效果 */,
 				989EB5612126B929008BF6B9 /* 密码弹出view */,
 				989822A3211AEC5300D547C0 /* 提示效果 */,
 				98CA170A21194C1F00579F31 /* WTextView */,
@@ -509,6 +541,9 @@
 				4CFE604F20EA1D7C00EA13E0 /* TestViewController.m */,
 				98B3F2192109DDB400E69FBB /* TwoViewController.h */,
 				98B3F21A2109DDB400E69FBB /* TwoViewController.m */,
+				989EB5892126C303008BF6B9 /* PageViewController.h */,
+				989EB58A2126C303008BF6B9 /* PageViewController.m */,
+				989EB5782126BFF9008BF6B9 /* Test */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -699,6 +734,54 @@
 				989EB5622126B953008BF6B9 /* ZJPayPopupView.m */,
 			);
 			path = "密码弹出view";
+			sourceTree = "<group>";
+		};
+		989EB5692126BFB8008BF6B9 /* 分页效果 */ = {
+			isa = PBXGroup;
+			children = (
+				989EB56E2126BFE8008BF6B9 /* EPageCore */,
+				989EB56A2126BFD9008BF6B9 /* EWaterFall */,
+			);
+			path = "分页效果";
+			sourceTree = "<group>";
+		};
+		989EB56A2126BFD9008BF6B9 /* EWaterFall */ = {
+			isa = PBXGroup;
+			children = (
+				989EB56B2126BFD9008BF6B9 /* EWaterFallView.m */,
+				989EB56C2126BFD9008BF6B9 /* EWaterFallView.h */,
+			);
+			path = EWaterFall;
+			sourceTree = "<group>";
+		};
+		989EB56E2126BFE8008BF6B9 /* EPageCore */ = {
+			isa = PBXGroup;
+			children = (
+				989EB56F2126BFE8008BF6B9 /* EPageSegmentCT.m */,
+				989EB5702126BFE8008BF6B9 /* ENestScrollPageView.m */,
+				989EB5712126BFE8008BF6B9 /* EScrollPageView.m */,
+				989EB5722126BFE8008BF6B9 /* EPageSegmentCT.h */,
+				989EB5732126BFE8008BF6B9 /* ENestScrollPageView.h */,
+				989EB5742126BFE8008BF6B9 /* EScrollPageView.h */,
+			);
+			path = EPageCore;
+			sourceTree = "<group>";
+		};
+		989EB5782126BFF9008BF6B9 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				989EB5792126BFF9008BF6B9 /* Test4ItemView.h */,
+				989EB57A2126BFF9008BF6B9 /* Test1VC.m */,
+				989EB57B2126BFF9008BF6B9 /* Test2VC.m */,
+				989EB57C2126BFF9008BF6B9 /* Test3VC.m */,
+				989EB57D2126BFF9008BF6B9 /* Test4ItemView.m */,
+				989EB57E2126BFF9008BF6B9 /* testBg.png */,
+				989EB57F2126BFF9008BF6B9 /* Test3VC.h */,
+				989EB5802126BFF9008BF6B9 /* Test2VC.h */,
+				989EB5812126BFF9008BF6B9 /* test.htm */,
+				989EB5822126BFF9008BF6B9 /* Test1VC.h */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		98CA169E211948D400579F31 /* IQKeyBoardManager */ = {
@@ -968,9 +1051,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				98CA16C7211948D500579F31 /* IQKeyboardManager.bundle in Resources */,
+				989EB5882126BFF9008BF6B9 /* test.htm in Resources */,
 				98E33E6A2117E25C0098C241 /* HZQDatePickerView.xib in Resources */,
 				4CAE39C520E213CC003465B5 /* LaunchScreen.storyboard in Resources */,
 				4CAE39C220E213CC003465B5 /* Assets.xcassets in Resources */,
+				989EB5872126BFF9008BF6B9 /* testBg.png in Resources */,
 				4CAE39C020E213CC003465B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1041,17 +1126,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				989EB56D2126BFD9008BF6B9 /* EWaterFallView.m in Sources */,
 				4CFE605520EA2C5B00EA13E0 /* BusinessDetailController.m in Sources */,
 				98CA16CA211948D500579F31 /* IQUIWindow+Hierarchy.m in Sources */,
 				98CA16F4211949AC00579F31 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				98CA16FC211949AC00579F31 /* MASViewConstraint.m in Sources */,
 				98CA16D32119495E00579F31 /* HQPickerView.m in Sources */,
+				989EB58B2126C303008BF6B9 /* PageViewController.m in Sources */,
 				4CAE3A3E20E241FD003465B5 /* WNetworkCache.m in Sources */,
 				4CAE3A0C20E22271003465B5 /* UIImage+ColorImage.m in Sources */,
 				98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */,
 				98CA170221194BA700579F31 /* UIBarButtonItem+WExtension.m in Sources */,
 				98CA16CF211948D500579F31 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				4CFE605020EA1D7C00EA13E0 /* TestViewController.m in Sources */,
+				989EB5862126BFF9008BF6B9 /* Test4ItemView.m in Sources */,
 				98CA16F8211949AC00579F31 /* MASLayoutConstraint.m in Sources */,
 				98CA16C2211948D500579F31 /* IQTextView.m in Sources */,
 				98CA16F6211949AC00579F31 /* MASCompositeConstraint.m in Sources */,
@@ -1061,6 +1149,7 @@
 				4CAE3A2320E232E1003465B5 /* WGuideManage.m in Sources */,
 				4CFE604D20EA1C3F00EA13E0 /* YYInfiniteLoopViewCell.m in Sources */,
 				4CAE3A3120E238D2003465B5 /* WToast.m in Sources */,
+				989EB5752126BFE8008BF6B9 /* EPageSegmentCT.m in Sources */,
 				98CA16C5211948D500579F31 /* IQBarButtonItem.m in Sources */,
 				4CAE39FA20E21E77003465B5 /* WNavigationController.m in Sources */,
 				989822AF211AEF5300D547C0 /* WPublicManager.m in Sources */,
@@ -1068,6 +1157,7 @@
 				4CFE604B20EA1C3F00EA13E0 /* YYInfiniteLoopView.m in Sources */,
 				98CA170621194BF100579F31 /* UIButton+WCustomIcon.m in Sources */,
 				98CA16C4211948D500579F31 /* IQTitleBarButtonItem.m in Sources */,
+				989EB5832126BFF9008BF6B9 /* Test1VC.m in Sources */,
 				98CA16CE211948D500579F31 /* IQUIViewController+Additions.m in Sources */,
 				98CA170D21194C4800579F31 /* WTextView.m in Sources */,
 				98CA16F7211949AC00579F31 /* MASConstraintMaker.m in Sources */,
@@ -1077,7 +1167,9 @@
 				989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */,
 				98CA16CB211948D500579F31 /* IQUITextFieldView+Additions.m in Sources */,
 				98CA16C6211948D500579F31 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				989EB5842126BFF9008BF6B9 /* Test2VC.m in Sources */,
 				4CAE3A4B20E243E3003465B5 /* YYMemoryCache.m in Sources */,
+				989EB5762126BFE8008BF6B9 /* ENestScrollPageView.m in Sources */,
 				98CA16FA211949AC00579F31 /* View+MASAdditions.m in Sources */,
 				983CD95A211158680050508C /* DateTimePickerView.m in Sources */,
 				98CA16FD211949AC00579F31 /* MASViewAttribute.m in Sources */,
@@ -1094,7 +1186,9 @@
 				98CA16FE211949AC00579F31 /* UIView+CLSetRect.m in Sources */,
 				98CA16FB211949AC00579F31 /* MASConstraint.m in Sources */,
 				98CA16F5211949AC00579F31 /* ViewController+MASAdditions.m in Sources */,
+				989EB5772126BFE8008BF6B9 /* EScrollPageView.m in Sources */,
 				98E33E6B2117E25C0098C241 /* HZQDatePickerView.m in Sources */,
+				989EB5852126BFF9008BF6B9 /* Test3VC.m in Sources */,
 				4CAE3A1A20E22DC0003465B5 /* WGuideViewController.m in Sources */,
 				4CAE3A1220E2261A003465B5 /* MineViewController.m in Sources */,
 				4CAE3A4820E243E3003465B5 /* YYDiskCache.m in Sources */,
