@@ -43,5 +43,8 @@
 #import "UIBarButtonItem+WExtension.h"
 #import "WProgressHUD.h" //提示效果
 
+#import "ZJDefines.h"
+#import "ZJPayPopupView.h"   //密码弹出view
+
 
 #endif /* WPrefix_pch */

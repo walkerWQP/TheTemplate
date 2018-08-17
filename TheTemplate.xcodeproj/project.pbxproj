@@ -45,6 +45,8 @@
 		989822AB211AECA500D547C0 /* UIView+GoodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822A8211AECA500D547C0 /* UIView+GoodView.m */; };
 		989822AF211AEF5300D547C0 /* WPublicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822AE211AEF5300D547C0 /* WPublicManager.m */; };
 		989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822B1211AF01000D547C0 /* WProgressHUD.m */; };
+		989EB5672126B953008BF6B9 /* ZJPayPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5622126B953008BF6B9 /* ZJPayPopupView.m */; };
+		989EB5682126B953008BF6B9 /* ZJPayPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5662126B953008BF6B9 /* ZJPayPasswordView.m */; };
 		98B3F21B2109DDB400E69FBB /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3F21A2109DDB400E69FBB /* TwoViewController.m */; };
 		98CA16C2211948D500579F31 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A0211948D400579F31 /* IQTextView.m */; };
 		98CA16C3211948D500579F31 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CA16A4211948D400579F31 /* IQToolbar.m */; };
@@ -183,6 +185,11 @@
 		989822AE211AEF5300D547C0 /* WPublicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPublicManager.m; sourceTree = "<group>"; };
 		989822B0211AF01000D547C0 /* WProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WProgressHUD.h; sourceTree = "<group>"; };
 		989822B1211AF01000D547C0 /* WProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WProgressHUD.m; sourceTree = "<group>"; };
+		989EB5622126B953008BF6B9 /* ZJPayPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPayPopupView.m; sourceTree = "<group>"; };
+		989EB5632126B953008BF6B9 /* ZJPayPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPayPopupView.h; sourceTree = "<group>"; };
+		989EB5642126B953008BF6B9 /* ZJPayPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPayPasswordView.h; sourceTree = "<group>"; };
+		989EB5652126B953008BF6B9 /* ZJDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDefines.h; sourceTree = "<group>"; };
+		989EB5662126B953008BF6B9 /* ZJPayPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPayPasswordView.m; sourceTree = "<group>"; };
 		98B3F2192109DDB400E69FBB /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		98B3F21A2109DDB400E69FBB /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		98CA16A0211948D400579F31 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
@@ -369,6 +376,7 @@
 		4CAE39EB20E21908003465B5 /* Expand(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				989EB5612126B929008BF6B9 /* 密码弹出view */,
 				989822A3211AEC5300D547C0 /* 提示效果 */,
 				98CA170A21194C1F00579F31 /* WTextView */,
 				98CA170321194BAC00579F31 /* btn(在图片左右方法) */,
@@ -679,6 +687,18 @@
 				989822B1211AF01000D547C0 /* WProgressHUD.m */,
 			);
 			path = "提示效果";
+			sourceTree = "<group>";
+		};
+		989EB5612126B929008BF6B9 /* 密码弹出view */ = {
+			isa = PBXGroup;
+			children = (
+				989EB5652126B953008BF6B9 /* ZJDefines.h */,
+				989EB5642126B953008BF6B9 /* ZJPayPasswordView.h */,
+				989EB5662126B953008BF6B9 /* ZJPayPasswordView.m */,
+				989EB5632126B953008BF6B9 /* ZJPayPopupView.h */,
+				989EB5622126B953008BF6B9 /* ZJPayPopupView.m */,
+			);
+			path = "密码弹出view";
 			sourceTree = "<group>";
 		};
 		98CA169E211948D400579F31 /* IQKeyBoardManager */ = {
@@ -1051,6 +1071,7 @@
 				98CA16CE211948D500579F31 /* IQUIViewController+Additions.m in Sources */,
 				98CA170D21194C4800579F31 /* WTextView.m in Sources */,
 				98CA16F7211949AC00579F31 /* MASConstraintMaker.m in Sources */,
+				989EB5682126B953008BF6B9 /* ZJPayPasswordView.m in Sources */,
 				4CAE39C820E213CC003465B5 /* main.m in Sources */,
 				4CAE3A0F20E225BD003465B5 /* HomeViewController.m in Sources */,
 				989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */,
@@ -1087,6 +1108,7 @@
 				98CA16C8211948D500579F31 /* IQKeyboardManager.m in Sources */,
 				4CAE3A4A20E243E3003465B5 /* YYKVStorage.m in Sources */,
 				4CAE3A4920E243E3003465B5 /* YYCache.m in Sources */,
+				989EB5672126B953008BF6B9 /* ZJPayPopupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

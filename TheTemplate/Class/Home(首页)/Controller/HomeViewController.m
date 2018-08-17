@@ -9,10 +9,13 @@
 #import "HomeViewController.h"
 #import "TestViewController.h"
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,ZJPayPopupViewDelegate>
 {
     UITableView * _tableView;
 }
+
+@property (nonatomic, strong) UIButton *passwordBtn;
+@property (nonatomic, strong) ZJPayPopupView *payPopupView;
 
 @end
 
@@ -32,13 +35,46 @@
     [button setTitle:@"点击事件" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(rightBtn:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, APP_WIDTH, APP_HEIGHT) style:UITableViewStyleGrouped];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, APP_WIDTH, APP_HEIGHT * 0.3) style:UITableViewStyleGrouped];
     _tableView.delegate=self;
     _tableView.dataSource=self;
     [self.view addSubview:_tableView];
     
+    self.passwordBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, _tableView.frame.size.height + 20 + APP_NAVH, APP_WIDTH - 40, 40)];
+    [self.passwordBtn setTitle:@"点击输入密码" forState:UIControlStateNormal];
+    [self.passwordBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.passwordBtn.backgroundColor = [UIColor greenColor];
+    [self.passwordBtn addTarget:self action:@selector(passwordBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.passwordBtn];
     
     
+    
+}
+
+- (void)passwordBtnSelector:(UIButton *)sender {
+    self.payPopupView = [[ZJPayPopupView alloc] init];
+    self.payPopupView.delegate = self;
+    [self.payPopupView showPayPopView];
+}
+
+#pragma mark - ZJPayPopupViewDelegate
+
+- (void)didClickForgetPasswordButton {
+    NSLog(@"点击了忘记密码");
+}
+
+- (void)didPasswordInputFinished:(NSString *)password {
+    if ([password isEqualToString:@"147258"]) {
+        NSLog(@"输入的密码正确");
+    } else {
+        NSLog(@"输入错误:%@",password);
+        [self.payPopupView didInputPayPasswordError];
+    }
+}
+
+//点击空白收回键盘
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 #pragma mark UITableViewDataSource
@@ -98,6 +134,8 @@
     [self.navigationController pushViewController:testVC animated:YES];
     
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {
