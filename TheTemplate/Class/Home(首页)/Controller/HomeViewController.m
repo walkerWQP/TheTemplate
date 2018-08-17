@@ -64,7 +64,7 @@
 }
 
 - (void)didPasswordInputFinished:(NSString *)password {
-    if ([password isEqualToString:@"147258"]) {
+    if ([password isEqualToString:@"123456"]) {
         NSLog(@"输入的密码正确");
     } else {
         NSLog(@"输入错误:%@",password);
