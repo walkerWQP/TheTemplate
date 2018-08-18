@@ -26,7 +26,9 @@
 #import "WToast.h"
 #import "BaseViewController.h"
 #import "WSaveManage.h"
-
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
 
 #import "WNetworkHelper.h"//网络请求
 #import "YYInfiniteLoopView.h" //轮播图

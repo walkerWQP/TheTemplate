@@ -25,6 +25,10 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>E招客户端需要使用定位服务，获取附近的人才/企业信息</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>E招客户端需要使用定位服务，获取附近的人才/企业信息</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

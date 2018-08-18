@@ -27,6 +27,8 @@
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     
+    [AMapServices sharedServices].apiKey = @"0a06fef6aaa158c44f0d88f5728b4c6c";
+    
     IQKeyboardManager * manager = [IQKeyboardManager sharedManager];
     manager.enable = YES;
     manager.shouldResignOnTouchOutside = YES;

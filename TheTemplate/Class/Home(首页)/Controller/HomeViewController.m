@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "TestViewController.h"
 #import "PageViewController.h"
+#import "MapViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,ZJPayPopupViewDelegate>
 {
@@ -19,6 +20,7 @@
 @property (nonatomic, strong) ZJPayPopupView *payPopupView;
 @property (nonatomic, strong) UIButton  *pageBtn;
 @property (nonatomic, strong) UIButton  *shareBtn;
+@property (nonatomic, strong) UIButton  *addressBtn;
 
 
 @end
@@ -58,15 +60,27 @@
     [self.pageBtn addTarget:self action:@selector(pageBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.pageBtn];
     
-    self.shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, self.passwordBtn.frame.size.height +  _tableView.frame.size.height + self.pageBtn.frame.size.height + 40, APP_WIDTH - 40, 40)];
+    self.shareBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, self.passwordBtn.frame.size.height +  _tableView.frame.size.height + self.pageBtn.frame.size.height + 20, APP_WIDTH - 40, 40)];
     self.shareBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
     self.shareBtn.center = self.view.center;
     [self.view addSubview:self.shareBtn];
     [self.shareBtn addTarget:self action:@selector(shareBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
     
+    self.addressBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, self.passwordBtn.frame.size.height +  _tableView.frame.size.height + self.pageBtn.frame.size.height + self.shareBtn.frame.size.height + 70, APP_WIDTH - 40, 40)];
+    [self.addressBtn setTitle:@"点击进入传入经纬度获取位置" forState:UIControlStateNormal];
+    [self.addressBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.addressBtn.backgroundColor = [UIColor greenColor];
+    [self.addressBtn addTarget:self action:@selector(addressBtnSelector:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.addressBtn];
     
     
     
+    
+}
+
+- (void)addressBtnSelector:(UIButton *)sender {
+    MapViewController *mapVC = [[MapViewController alloc] init];
+    [self.navigationController pushViewController:mapVC animated:YES];
 }
 
 - (void)shareBtnSelector:(UIButton *)sender {

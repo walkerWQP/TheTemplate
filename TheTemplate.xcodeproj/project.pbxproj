@@ -42,6 +42,7 @@
 		4CFE605020EA1D7C00EA13E0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE604F20EA1D7C00EA13E0 /* TestViewController.m */; };
 		4CFE605520EA2C5B00EA13E0 /* BusinessDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE605420EA2C5B00EA13E0 /* BusinessDetailController.m */; };
 		983CD95A211158680050508C /* DateTimePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 983CD959211158680050508C /* DateTimePickerView.m */; };
+		988676F82127B56000034D96 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 988676F72127B56000034D96 /* MapViewController.m */; };
 		989822AB211AECA500D547C0 /* UIView+GoodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822A8211AECA500D547C0 /* UIView+GoodView.m */; };
 		989822AF211AEF5300D547C0 /* WPublicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822AE211AEF5300D547C0 /* WPublicManager.m */; };
 		989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822B1211AF01000D547C0 /* WProgressHUD.m */; };
@@ -192,6 +193,8 @@
 		72CBB1501CBC6885739F59E4 /* Pods-TheTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheTemplate/Pods-TheTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		983CD958211158680050508C /* DateTimePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateTimePickerView.h; sourceTree = "<group>"; };
 		983CD959211158680050508C /* DateTimePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateTimePickerView.m; sourceTree = "<group>"; };
+		988676F62127B56000034D96 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		988676F72127B56000034D96 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		989822A6211AECA500D547C0 /* UIView+GoodView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GoodView.h"; sourceTree = "<group>"; };
 		989822A8211AECA500D547C0 /* UIView+GoodView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GoodView.m"; sourceTree = "<group>"; };
 		989822AD211AEF5300D547C0 /* WPublicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPublicManager.h; sourceTree = "<group>"; };
@@ -550,6 +553,8 @@
 				98B3F21A2109DDB400E69FBB /* TwoViewController.m */,
 				989EB5892126C303008BF6B9 /* PageViewController.h */,
 				989EB58A2126C303008BF6B9 /* PageViewController.m */,
+				988676F62127B56000034D96 /* MapViewController.h */,
+				988676F72127B56000034D96 /* MapViewController.m */,
 				989EB5782126BFF9008BF6B9 /* Test */,
 			);
 			path = Controller;
@@ -972,6 +977,7 @@
 				4CAE39B220E213CB003465B5 /* Frameworks */,
 				4CAE39B320E213CB003465B5 /* Resources */,
 				EC807DBC7F24958723729979 /* [CP] Embed Pods Frameworks */,
+				D48F18A2AAB1667FE8921D92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1113,6 +1119,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D48F18A2AAB1667FE8921D92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TheTemplate/Pods-TheTemplate-resources.sh",
+				"${PODS_ROOT}/AMap3DMap-NO-IDFA/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheTemplate/Pods-TheTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EC807DBC7F24958723729979 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1171,6 +1195,7 @@
 				4CAE3A3120E238D2003465B5 /* WToast.m in Sources */,
 				989EB5752126BFE8008BF6B9 /* EPageSegmentCT.m in Sources */,
 				98CA16C5211948D500579F31 /* IQBarButtonItem.m in Sources */,
+				988676F82127B56000034D96 /* MapViewController.m in Sources */,
 				4CAE39FA20E21E77003465B5 /* WNavigationController.m in Sources */,
 				989822AF211AEF5300D547C0 /* WPublicManager.m in Sources */,
 				98CA170921194C1000579F31 /* UIImage+ColorImage.m in Sources */,
