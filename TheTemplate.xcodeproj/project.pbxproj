@@ -46,6 +46,7 @@
 		989822AB211AECA500D547C0 /* UIView+GoodView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822A8211AECA500D547C0 /* UIView+GoodView.m */; };
 		989822AF211AEF5300D547C0 /* WPublicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822AE211AEF5300D547C0 /* WPublicManager.m */; };
 		989822B2211AF01000D547C0 /* WProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 989822B1211AF01000D547C0 /* WProgressHUD.m */; };
+		989E958C212FE0B20082F7A1 /* WWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989E958B212FE0B20082F7A1 /* WWKWebViewController.m */; };
 		989EB5672126B953008BF6B9 /* ZJPayPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5622126B953008BF6B9 /* ZJPayPopupView.m */; };
 		989EB5682126B953008BF6B9 /* ZJPayPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB5662126B953008BF6B9 /* ZJPayPasswordView.m */; };
 		989EB56D2126BFD9008BF6B9 /* EWaterFallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 989EB56B2126BFD9008BF6B9 /* EWaterFallView.m */; };
@@ -201,6 +202,8 @@
 		989822AE211AEF5300D547C0 /* WPublicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPublicManager.m; sourceTree = "<group>"; };
 		989822B0211AF01000D547C0 /* WProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WProgressHUD.h; sourceTree = "<group>"; };
 		989822B1211AF01000D547C0 /* WProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WProgressHUD.m; sourceTree = "<group>"; };
+		989E958A212FE0B20082F7A1 /* WWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWKWebViewController.h; sourceTree = "<group>"; };
+		989E958B212FE0B20082F7A1 /* WWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWKWebViewController.m; sourceTree = "<group>"; };
 		989EB5622126B953008BF6B9 /* ZJPayPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPayPopupView.m; sourceTree = "<group>"; };
 		989EB5632126B953008BF6B9 /* ZJPayPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPayPopupView.h; sourceTree = "<group>"; };
 		989EB5642126B953008BF6B9 /* ZJPayPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPayPasswordView.h; sourceTree = "<group>"; };
@@ -416,6 +419,7 @@
 		4CAE39EB20E21908003465B5 /* Expand(扩展) */ = {
 			isa = PBXGroup;
 			children = (
+				989E9589212FE06F0082F7A1 /* WKWebView */,
 				989EB58E2126D2C4008BF6B9 /* 仿微博弹出效果 */,
 				989EB5692126BFB8008BF6B9 /* 分页效果 */,
 				989EB5612126B929008BF6B9 /* 密码弹出view */,
@@ -734,6 +738,15 @@
 				989822B1211AF01000D547C0 /* WProgressHUD.m */,
 			);
 			path = "提示效果";
+			sourceTree = "<group>";
+		};
+		989E9589212FE06F0082F7A1 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				989E958A212FE0B20082F7A1 /* WWKWebViewController.h */,
+				989E958B212FE0B20082F7A1 /* WWKWebViewController.m */,
+			);
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 		989EB5612126B929008BF6B9 /* 密码弹出view */ = {
@@ -1235,6 +1248,7 @@
 				98E33E6B2117E25C0098C241 /* HZQDatePickerView.m in Sources */,
 				989EB5852126BFF9008BF6B9 /* Test3VC.m in Sources */,
 				4CAE3A1A20E22DC0003465B5 /* WGuideViewController.m in Sources */,
+				989E958C212FE0B20082F7A1 /* WWKWebViewController.m in Sources */,
 				4CAE3A1220E2261A003465B5 /* MineViewController.m in Sources */,
 				4CAE3A4820E243E3003465B5 /* YYDiskCache.m in Sources */,
 				98CA16CC211948D500579F31 /* IQUIScrollView+Additions.m in Sources */,
